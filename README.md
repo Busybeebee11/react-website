@@ -29,12 +29,52 @@ First react assignment on the following topics learned.
     - Second, it helps to prevent bugs and maintain a consistent UI by ensuring that child components always receive the latest state from the parent. 
     - Third, it makes it easier to build reusable components because they can be designed to accept props and render themselves based on those props, without needing to know about the internal state of the application.
 
-#### Q. List five major advantages of React
+### Q. List five major advantages of React
 1. Reusuable components
 2. Improved performance
 3. It is easy to learn
 4. It is used for both web and mobile apps development
 5. It is used for easy creation of dynamic applications, as well as easy debugging.
 
-#### Q. What is the name of the Software Engineer that created React? Also, which company owns React?
+### Q. What is the name of the Software Engineer that created React? Also, which company owns React?
 - React was created by Jordan Walke, a software engineer at Facebook. React is currently maintained by Facebook and a community of developers. 
+
+### Q. What are the notable differences between HTML & JSX? Give at least 3 of them
+#### a. Syntax: 
+HTML and JSX have different syntax. HTML uses tag-based syntax, where tags are used to define elements and attributes are used to set their properties. JSX, on the other hand, uses a combination of HTML-like syntax and JavaScript expressions. JSX tags are similar to HTML tags, but they are enclosed in curly braces and can contain JavaScript expressions. In other words, JSX allows you to write HTML-like code within your JavaScript code.
+HTML:
+```
+<div class="my-class">Hello, React World!</div>
+```
+JSX: 
+```
+<div className="my-class">Hello, React World!</div>
+```
+
+#### b. Attributes and Props: 
+In HTML, attributes are used to define the properties of an element, whereas in JSX, these properties are referred to as props. Additionally, in JSX, you need to use camelCase for props, rather than kebab-case (written in lowercase and separated by hyphens (e.g. "class" or "data-attribute")) in HTML. This is because JSX attributes are converted into JavaScript objects, and in JavaScript, object properties are typically written in camelCase. All props must be closed.
+HTML:
+```
+<img src="path/to/image.jpg" alt="A beautiful landscape" width="500" height="300">
+```
+JSX: 
+```
+<MyImageComponent src="path/to/image.jpg" alt="A beautiful landscape" width={500} height={300} />
+```
+#### c. Tags: 
+In HTML, all tags are created equal. In JSX, there are two types of tags: HTML tags and custom React component tags. HTML tags are written in lowercase, while custom React component tags are written in uppercase. For example, in HTML you might write:
+HTML: 
+```
+<button>Click me</button>
+```
+JSX:
+```
+<MyButton onClick={handleClick}>Click me</MyButton>
+```
+#### Q. Why can’t browsers read JSX?
+- Browsers can't read JSX directly because it is not valid JavaScript. JSX is a syntax extension for JavaScript that allows developers to write HTML-like code in their JavaScript files. However, browsers can only interpret pure JavaScript code, and JSX must be transpiled into plain JavaScript before it can be executed in the browser.
+
+- To transpile JSX into JavaScript, developers typically use a tool like Babel, which converts JSX syntax into plain JavaScript code that can be understood by browsers. Babel can be configured to transpile JSX into various versions of JavaScript, depending on the targeted browser or environment.
+
+- By transpiling JSX into JavaScript, developers can take advantage of the benefits of using JSX, such as the ability to write declarative UI components and easily manage state, without sacrificing browser compatibility.
+
