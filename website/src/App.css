@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Website {
+  margin-top: 20px;
+}
+
+header, section {
+  margin-bottom: 32px;
+} 
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  color: #b6b9bb;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+a:hover {
+  color: #08d808;
+}
+
+.Our-Services ul {
+  padding-left: 40px;
+}
