@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header() {
+const Header = () => {
     return (
         <header>
             <h1>Welcome to my website!</h1>
@@ -13,7 +13,7 @@ function Header() {
                 </ul>
             </nav>
         </header>
-    );
+    )
 }
 
 export default Header;

@@ -5,14 +5,16 @@
 }
 
 .Website {
-  margin-top: 20px;
+  margin: 20px 24px 4px;
 }
 
-header, section {
+header,
+section {
   margin-bottom: 32px;
-} 
+}
 
-h1, h2 {
+h1,
+h2 {
   margin-bottom: 10px;
 }
 
@@ -22,13 +24,13 @@ nav ul {
 }
 
 a {
-  color: #b6b9bb;
+  color: #05aef1;
   text-decoration: none;
   margin-left: 10px;
 }
 
 a:hover {
-  color: #08d808;
+  color: #72c1f3;
 }
 
 .Our-Services ul {
